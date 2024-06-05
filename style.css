@@ -2,6 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(360.jpg);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1;
 }
 
 header {
@@ -27,7 +41,8 @@ nav ul li a {
 
 #intro {
     text-align: center;
-    padding: 2em 0;
+    padding: 4em 0;
+    margin: 125px 0;
 }
 
 #intro img {
@@ -44,8 +59,8 @@ nav ul li a {
 }
 
 #features {
-    padding: 2em 1em;
-    background-color: #f9f9f9;
+    padding: 1em 1em;
+    background-color: #d4d4d4;
 }
 
 #features .feature {
@@ -59,7 +74,30 @@ nav ul li a {
 }
 
 #about {
-    padding: 2em 1em;
+    padding: 6em 1em;
+    /* align-items: center; */
+    /* text-align: center; */
+    background-color: #776969;
+  
+}
+#about h2, span {
+    align-items: center;
+     text-align: center; 
+     justify-content: center;
+     margin: 10px 32.6rem;
+}
+#about ul{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#about li{
+    list-style: none;
+    margin: 12px;
+}
+#about a{
+    color: aliceblue;
+    text-decoration: none;
 }
 
 footer {
@@ -67,4 +105,7 @@ footer {
     padding: 1em 0;
     background-color: #333;
     color: white;
+    margin-top: 5px;
+    /* position:sticky; */
+    bottom: 0;
 }
